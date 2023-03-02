@@ -49,7 +49,6 @@ export default {
 <style lang="scss" scoped>
 
 .footer_info{
-    display: flex;
     position: relative;
     background-image: url('/img/footer-bg.jpg');
     background-size: cover;

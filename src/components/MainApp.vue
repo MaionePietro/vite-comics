@@ -60,6 +60,8 @@ export default {
 .main_cards {
     padding: 30px;
     background-color: #0077F8;
+    position: relative;
+    z-index: 2;
 }
 
 ul {
