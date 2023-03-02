@@ -30,7 +30,7 @@
     </section>
 </template>
 
-<style>
+<style scoped>
     .header_list{
         display: flex;
         justify-content: space-between;
