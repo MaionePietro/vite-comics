@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <section class="header_list">
+    <section class="container header_list">
         <div class="logo">
             <img src="../../public/img/dc-logo.png" alt="">
         </div>
@@ -30,12 +30,13 @@
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     .header_list{
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: white;
+        padding: 30px;
     }
     ul{
         display: flex;

@@ -23,5 +23,7 @@ export default {
   <FooterApp></FooterApp>
 </template>
 
-<style>
+<style lang="scss" >
+  @use './style/general.scss';
+  
 </style>
