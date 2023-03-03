@@ -69,8 +69,7 @@ export default {
 }
 
 .footer_profiles {
-    position: relative;
-    z-index: 2;
+    
     background-color: #2D2A22;
     padding: 40px;
     .container{
