@@ -12,19 +12,48 @@ export default {
     <section class="footer_info">
         <img src="/img/dc-logo-bg.png" alt="" class="imgBg">
         <div class="container">
-            <ul>
-                DC COMICS
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-            </ul>
-            <ul></ul>
-            <ul></ul>
-            <ul></ul>
+            <div>
+                <h2>DC COMICS</h2>
+                <ul>
+                    <li>Characters</li>
+                    <li>Comics</li>
+                    <li>Movie</li>
+                    <li>TV</li>
+                    <li>Games</li>
+                    <li>Videos</li>
+                    <li>News</li>
+                </ul>
+                <h2>SHOP</h2>
+                <ul>
+                    <li>Shop DC</li>
+                    <li>Shop DC Collectibles</li>
+                </ul>
+            </div>
+            <div>
+                <h2>DC</h2>
+                <ul>
+                    <li>Terms Of Use</li>
+                    <li>Privacy policy (New)</li>
+                    <li>Ad Choices</li>
+                    <li>Adverstising</li>
+                    <li>Jobs</li>
+                    <li>Talent Workshops</li>
+                    <li>CPSC Certificates</li>
+                    <li>Ratings</li>
+                    <li>Shop Help</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div>
+                <h2>SITES</h2>
+                <ul>
+                    <li>DC</li>
+                    <li>MAD Magazine</li>
+                    <li>DC Kids</li>
+                    <li>DC Universe</li>
+                    <li>DC Power Visa</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="footer_profiles">
@@ -47,23 +76,35 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
-.footer_info{
+.footer_info {
     position: relative;
     background-image: url('/img/footer-bg.jpg');
     background-size: cover;
-    height: 400px;
+    
 
-    ul{
+    .container {
+        padding: 50px;
+        display: flex;
+        gap: 30px;
         color: white;
+    }
+
+    ul {
+        margin-top: 5px;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: column;
+        li{
+            padding: 7px 0;
+            color: grey;
+        }
     }
-    .imgBg{
+
+    .imgBg {
         display: flex;
         position: absolute;
         right: 350px;
-        top: -80px;
+        top: -50px;
         z-index: 1;
     }
 }
@@ -73,17 +114,19 @@ export default {
     z-index: 2;
     background-color: #2D2A22;
     padding: 40px;
-    .container{
+
+    .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
     ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-}
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+    }
 }
 
 
@@ -96,4 +139,5 @@ export default {
     padding: 10px;
     border: 2px solid #0077F8;
     color: white;
-}</style>
+}
+</style>

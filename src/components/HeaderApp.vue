@@ -36,7 +36,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: white;
-        padding: 30px;
+        padding: 20px;
     }
     ul{
         display: flex;

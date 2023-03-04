@@ -82,6 +82,8 @@ export default {
 </script>
 
 <template>
+    <section class="main_bg">
+    </section>
     <section class="main_here">
         <div class="container grid-container">
             <div v-for="(comic, i) in comics"
@@ -95,8 +97,6 @@ export default {
             
         </div>
     </section>
-
-
     <section class="main_cards">
         <ul class="container cards">
             <li>
@@ -134,6 +134,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+.main_bg{
+    height: 300px;
+    background-image: url("/img/jumbotron.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
 .main_here {
     background-color: black;
     color: white;
@@ -146,8 +153,8 @@ export default {
         
         img{
             width: 100%;
-            object-fit: cover; /* aggiunto */
-            object-position: center; /* aggiunto */
+            object-fit: cover;
+            object-position: center;
         }
         .col {
             flex-grow: 1;
