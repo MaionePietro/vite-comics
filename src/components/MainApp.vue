@@ -88,7 +88,7 @@ export default {
         <div class="container grid-container">
             <div v-for="(comic, i) in comics"
             class="card">
-                <div>
+                <div class="card-img">
                     <img :src="comic.thumb" alt="">
                 </div>
                 <span class="tex">{{ comic.series }}</span>
@@ -167,6 +167,9 @@ export default {
 
             .card__title {
                 font-size: 18px;
+            }
+            .card-img{
+                margin-bottom: 15px;
             }
         }
     }
