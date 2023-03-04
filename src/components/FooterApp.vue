@@ -1,8 +1,58 @@
 <script>
+import ListLink from './ListLink.vue';
+
 export default {
+    components:{
+        ListLink
+    },
     data() {
         return {
-
+            links:[
+                {
+                    title: "DC COMICS",
+                    urls: [
+                        'Characters',
+                        'Comics',
+                        'Movie',
+                        'TV',
+                        'Games',
+                        'Videos',
+                        'News'
+                    ]
+                },
+                {
+                    title: "SHOP",
+                    urls: [
+                        'Shop DC',
+                        'Shop DC Collectibles'
+                    ]
+                },
+                {
+                    title: "DC",
+                    urls: [
+                        'Terms Of Use',
+                        'Privacy policy (New)',
+                        'Ad Choices',
+                        'Adverstising',
+                        'Jobs',
+                        'Talent Workshops',
+                        'CPSC Certificates',
+                        'Ratings',
+                        'Shop Help',
+                        'Contact Us'
+                    ]
+                },
+                {
+                    title: "SITES",
+                    urls: [
+                        'DC',
+                        'MAD Magazine',
+                        'DC Kids',
+                        'DC Universe',
+                        'DC Power Visa'
+                    ]
+                }
+            ]
         }
     }
 }
@@ -13,46 +63,14 @@ export default {
         <img src="/img/dc-logo-bg.png" alt="" class="imgBg">
         <div class="container">
             <div>
-                <h2>DC COMICS</h2>
-                <ul>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movie</li>
-                    <li>TV</li>
-                    <li>Games</li>
-                    <li>Videos</li>
-                    <li>News</li>
-                </ul>
-                <h2>SHOP</h2>
-                <ul>
-                    <li>Shop DC</li>
-                    <li>Shop DC Collectibles</li>
-                </ul>
+                <ListLink :title="links[0].title" :urls="links[0].urls" />
+                <ListLink :title="links[1].title" :urls="links[1].urls" />
             </div>
             <div>
-                <h2>DC</h2>
-                <ul>
-                    <li>Terms Of Use</li>
-                    <li>Privacy policy (New)</li>
-                    <li>Ad Choices</li>
-                    <li>Adverstising</li>
-                    <li>Jobs</li>
-                    <li>Talent Workshops</li>
-                    <li>CPSC Certificates</li>
-                    <li>Ratings</li>
-                    <li>Shop Help</li>
-                    <li>Contact Us</li>
-                </ul>
+                <ListLink :title="links[2].title" :urls="links[2].urls" />
             </div>
             <div>
-                <h2>SITES</h2>
-                <ul>
-                    <li>DC</li>
-                    <li>MAD Magazine</li>
-                    <li>DC Kids</li>
-                    <li>DC Universe</li>
-                    <li>DC Power Visa</li>
-                </ul>
+                <ListLink :title="links[3].title" :urls="links[3].urls" />
             </div>
         </div>
     </section>
@@ -80,26 +98,13 @@ export default {
     position: relative;
     background-image: url('/img/footer-bg.jpg');
     background-size: cover;
-    
-
     .container {
         padding: 50px;
         display: flex;
         gap: 30px;
         color: white;
+        
     }
-
-    ul {
-        margin-top: 5px;
-        margin-bottom: 15px;
-        display: flex;
-        flex-direction: column;
-        li{
-            padding: 7px 0;
-            color: grey;
-        }
-    }
-
     .imgBg {
         display: flex;
         position: absolute;
@@ -108,13 +113,11 @@ export default {
         z-index: 1;
     }
 }
-
 .footer_profiles {
     position: relative;
     z-index: 2;
     background-color: #2D2A22;
     padding: 40px;
-
     .container {
         display: flex;
         align-items: center;
@@ -128,13 +131,10 @@ export default {
         list-style: none;
     }
 }
-
-
 .follow {
     font-weight: bold;
     color: #0077F8;
 }
-
 .sing-up {
     padding: 10px;
     border: 2px solid #0077F8;
